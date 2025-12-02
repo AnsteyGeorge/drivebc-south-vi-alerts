@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>South VI Commute Monitor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div id="app">
+    <header id="status-bar">
+      <div class="status-left">
+        <span id="status-pill" class="pill pill-gray">UNKNOWN</span>
+        <span id="status-message" class="status-text">Loading status…</span>
+      </div>
+      <div class="status-right">
+        <span class="status-meta">Last check: <span id="last-check">—</span></span>
+        <span class="status-meta">Next check: <span id="next-check">—</span></span>
+      </div>
+    </header>
+
+    <main>
+      <section id="incident-strip-section">
+        <div class="section-header">
+          <h2>Live Incidents</h2>
+          <span id="incident-count-badge" class="badge">0</span>
+        </div>
+        <div id="incident-strip" class="incident-strip empty-state">
+          <div class="empty-message">
+            <div class="empty-icon">✓</div>
+            <div class="empty-text">
+              <h3>No active commute disruptions detected</h3>
+              <p>System is monitoring your South Island corridors in real time.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="camera-grid-section">
+        <div class="section-header">
+          <h2>Camera Grid</h2>
+          <span id="camera-count-badge" class="badge">0</span>
+        </div>
+        <div id="camera-grid" class="camera-grid">
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

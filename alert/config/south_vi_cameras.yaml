@@ -1,0 +1,15 @@
+# South Vancouver Island cameras (EXAMPLE)
+# Replace this file with your verified 9-camera YAML.
+# Structure must match:
+# cameras:
+#   - id: 427
+#     drivebc_id: 427
+#     name: Malahat Summit
+#     highway: "1"
+#     image_url: "https://images.drivebc.ca/bchighwaycam/pub/cameras/427.jpg"
+cameras:
+  - id: 427
+    drivebc_id: 427
+    name: Malahat Summit
+    highway: "1"
+    image_url: "https://images.drivebc.ca/bchighwaycam/pub/cameras/427.jpg"
