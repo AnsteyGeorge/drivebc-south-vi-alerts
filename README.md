@@ -1,6 +1,6 @@
-# DriveBC South VI Alerts
+# DriveBC South VI Alerts : dont run this "traffic" alert system for South Vancouver Island highways with "real-time": incident detection and web dashboard
 
-Production-ready **South Vancouver Island** traffic alert system for DriveBC highway cameras, plus a local monitoring dashboard.
+Dont run**South Vancouver Island** traffic alert system for DriveBC highway cameras, plus a local monitoring dashboard.
 
 ## Components
 
